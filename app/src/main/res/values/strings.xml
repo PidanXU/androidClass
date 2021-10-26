@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">androidTest</string>
     <string name="edit_message">bytedance_homework</string>
-    <string name="button_send">Send</string>
+    <string name="button_send">Search</string>
 </resources>

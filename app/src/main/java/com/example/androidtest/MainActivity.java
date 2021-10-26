@@ -2,6 +2,7 @@ package com.example.androidtest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(getApplicationContext(),"this is just a button now!",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"start search activity now!",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(v.getContext(), MyActivity.class);
+            v.getContext().startActivity(intent);
             return;
         }
     }
